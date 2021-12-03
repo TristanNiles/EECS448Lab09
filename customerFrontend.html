@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type = "text/javascript" src = "formChecker.js"></script>
+	<link href = "storeStyle.css" rel = "stylesheet" type = "text/css"/>
+</head>
+<body>
+	<h1>Silk Sonic Clothes Shop</h1>
+	<form id = "myForm" name ="myForm" action = "customerBackend.php" method = "post">
+  		<label for="un">Username:</label>
+  		<input type="text" id="un" name="un"><br>
+  		<label for="pw">Password:</label>
+  		<input type="password" id="pw" name="pw"><br><br>
+	
+		<img src="https://media-us.cdn.prod.wmgecom.com/media/catalog/product/cache/664/image/800x/9df78eab33525d08d6e5fb8d27136e95/s/s/ss_sweater.png" class = "item">
+		<img src="https://media-us.cdn.prod.wmgecom.com/media/catalog/product/cache/664/image/800x/9df78eab33525d08d6e5fb8d27136e95/1/0/100521_silksonic_productimages_tshirtyellow.png" class = "item">
+		<img src="https://media-us.cdn.prod.wmgecom.com/media/catalog/product/cache/664/image/800x/9df78eab33525d08d6e5fb8d27136e95/1/0/100521_silksonic_productimages_tshirtpale.png" class = "item"><br>
+		<h3>$50 Crewneck</h3>
+		<h3>$25 Gold T-Shirt</h3>
+		<h3>$25 Gold T-Shirt</h3><br>
+
+		<label for="crew">Crewneck Quantity: </label>
+		<input type="number" id="crew" name="crew" min="0"><br>
+		<label for="gold">Gold T-Shirt Quantity: </label>
+		<input type="number" id="gold" name="gold" min="0"><br>
+		<label for="cream">Cream T-Shirt Quantity: </label>
+		<input type="number" id="cream" name="cream" min="0"><br><br>
+		
+
+ 		<input type="radio" id="free" name="shipping" value="7 Day">
+  		<label for="free">Free 7 Day</label><br>
+  		<input type="radio" id="overnight" name="shipping" value="Overnight">
+  		<label for="overnight">$50.00 Over Night</label><br>
+  		<input type="radio" id="three" name="shipping" value="3 Day">
+  		<label for="three">$5.00 Three Day</label><br><br>
+
+		<input id = "submitBtn" type = "button" value = "Submit" onClick="submitFunc()">
+		<input id = "reset" type = "reset" value = "Reset">
+	</form>
+</body>
+</html>
